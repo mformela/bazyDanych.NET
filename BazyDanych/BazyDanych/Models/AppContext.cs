@@ -8,7 +8,7 @@ namespace BazyDanych.Models
 {
     public class AppContext : DbContext
     {
-        public AppContext() : base ("TestDB") /*wprowadzamy connection string do bazy danych - będziemy się z nią łączyć */
+        public AppContext() : base ("TesstDB") /*wprowadzamy connection string do bazy danych - będziemy się z nią łączyć */
         {
         
         }

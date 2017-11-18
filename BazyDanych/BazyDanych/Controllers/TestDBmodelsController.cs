@@ -12,7 +12,7 @@ namespace BazyDanych.Controllers
 {
     public class TestDBmodelsController : Controller
     {
-        private AppContext db = new AppContext();
+        private Models.AppContext db = new Models.AppContext();
 
         // GET: TestDBmodels
         public ActionResult Index()
