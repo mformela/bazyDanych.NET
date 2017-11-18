@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{61481EA6-031B-47B3-B085-5DF11109045A}</ProjectGuid>
+    <ProjectGuid>{55CF41BB-AAB2-48A0-AA03-E5129F5CAD20}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BazyDanych</RootNamespace>
-    <AssemblyName>BazyDanych</AssemblyName>
+    <RootNamespace>ListaZakupow</RootNamespace>
+    <AssemblyName>ListaZakupow</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -157,17 +157,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TestDBmodelsController.cs" />
+    <Compile Include="Controllers\ShopDBListsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201711181330087_dodanieDatyModyfikacji.cs" />
-    <Compile Include="Migrations\201711181330087_dodanieDatyModyfikacji.Designer.cs">
-      <DependentUpon>201711181330087_dodanieDatyModyfikacji.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppContext.cs" />
-    <Compile Include="Models\TestDBmodel.cs" />
+    <Compile Include="Models\ShopDBList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -210,11 +205,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\TestDBmodels\Create.cshtml" />
-    <Content Include="Views\TestDBmodels\Delete.cshtml" />
-    <Content Include="Views\TestDBmodels\Details.cshtml" />
-    <Content Include="Views\TestDBmodels\Edit.cshtml" />
-    <Content Include="Views\TestDBmodels\Index.cshtml" />
+    <Content Include="Views\ShopDBLists\Create.cshtml" />
+    <Content Include="Views\ShopDBLists\Delete.cshtml" />
+    <Content Include="Views\ShopDBLists\Details.cshtml" />
+    <Content Include="Views\ShopDBLists\Edit.cshtml" />
+    <Content Include="Views\ShopDBLists\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -226,11 +221,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711181330087_dodanieDatyModyfikacji.resx">
-      <DependentUpon>201711181330087_dodanieDatyModyfikacji.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -248,9 +238,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50782</DevelopmentServerPort>
+          <DevelopmentServerPort>51784</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50782/</IISUrl>
+          <IISUrl>http://localhost:51784/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
